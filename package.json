@@ -1,0 +1,92 @@
+{
+  "name": "velocilogic",
+  "version": "0.1.0",
+  "description": "VelociLogic CLI is an extensible command-line tool designed for automation, integration, and streamlined process management. Built on the robust OClif framework, this CLI acts as the primary interface for interacting with the VelociLogic platform, enabling developers and administrators to rapidly execute tasks, manage workflows, and integrate systems using powerful and modular commands.",
+  "author": {
+    "name": "Md Irshad",
+    "email": "mdirshadengineer+github@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/mdirshadengineer/VelociLogicCLI",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdirshadengineer/VelociLogicCLI"
+  },
+  "bugs": {
+    "url": "https://github.com/mdirshadengineer/VelociLogicCLI/issues"
+  },
+  "keywords": [
+    "oclif",
+    "cli",
+    "automation",
+    "devops",
+    "workflow",
+    "integration",
+    "typescript",
+    "command-line",
+    "velocilogic"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "./bin",
+    "./dist",
+    "./oclif.manifest.json"
+  ],
+  "bin": {
+    "velocilogic": "./bin/run.js"
+  },
+  "oclif": {
+    "bin": "velocilogic",
+    "dirname": "velocilogic",
+    "commands": "./dist/commands",
+    "plugins": [
+      "@oclif/plugin-help",
+      "@oclif/plugin-plugins"
+    ],
+    "topicSeparator": " ",
+    "topics": {
+      "hello": {
+        "description": "Say hello to the world and others"
+      }
+    }
+  },
+  "scripts": {
+    "build": "shx rm -rf dist && tsc -b",
+    "lint": "eslint",
+    "format": "prettier -w .",
+    "postpack": "shx rm -f oclif.manifest.json",
+    "posttest": "npm run lint",
+    "prepack": "oclif manifest && oclif readme",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif readme && git add README.md"
+  },
+  "dependencies": {
+    "@oclif/core": "^4",
+    "@oclif/plugin-help": "^6",
+    "@oclif/plugin-plugins": "^5",
+    "run-script-os": "^1.1.6"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1",
+    "@oclif/prettier-config": "^0.2.1",
+    "@oclif/test": "^4",
+    "@types/chai": "^4",
+    "@types/mocha": "^10",
+    "@types/node": "^18",
+    "chai": "^4",
+    "eslint": "^9",
+    "eslint-config-oclif": "^6",
+    "eslint-config-prettier": "^10",
+    "mocha": "^10",
+    "oclif": "^4",
+    "prettier": "^3.5.3",
+    "shx": "^0.3.3",
+    "ts-node": "^10",
+    "typescript": "^5"
+  }
+}
