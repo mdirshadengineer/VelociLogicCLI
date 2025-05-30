@@ -7,88 +7,41 @@ A new CLI generated with oclif
 [![Downloads/week](https://img.shields.io/npm/dw/velocilogic.svg)](https://npmjs.org/package/velocilogic)
 
 <!-- toc -->
-
-- [Usage](#usage)
-- [Commands](#commands)
+* [velocilogic](#velocilogic)
+* [Usage](#usage)
+* [Commands](#commands)
 <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
-
 ```sh-session
 $ npm install -g velocilogic
 $ velocilogic COMMAND
 running command...
 $ velocilogic (--version)
-velocilogic/0.0.0 win32-x64 node-v22.15.0
+velocilogic/0.1.0 linux-x64 node-v20.19.1
 $ velocilogic --help [COMMAND]
 USAGE
   $ velocilogic COMMAND
 ...
 ```
-
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-
-- [`velocilogic hello PERSON`](#velocilogic-hello-person)
-- [`velocilogic hello world`](#velocilogic-hello-world)
-- [`velocilogic help [COMMAND]`](#velocilogic-help-command)
-- [`velocilogic plugins`](#velocilogic-plugins)
-- [`velocilogic plugins add PLUGIN`](#velocilogic-plugins-add-plugin)
-- [`velocilogic plugins:inspect PLUGIN...`](#velocilogic-pluginsinspect-plugin)
-- [`velocilogic plugins install PLUGIN`](#velocilogic-plugins-install-plugin)
-- [`velocilogic plugins link PATH`](#velocilogic-plugins-link-path)
-- [`velocilogic plugins remove [PLUGIN]`](#velocilogic-plugins-remove-plugin)
-- [`velocilogic plugins reset`](#velocilogic-plugins-reset)
-- [`velocilogic plugins uninstall [PLUGIN]`](#velocilogic-plugins-uninstall-plugin)
-- [`velocilogic plugins unlink [PLUGIN]`](#velocilogic-plugins-unlink-plugin)
-- [`velocilogic plugins update`](#velocilogic-plugins-update)
-
-## `velocilogic hello PERSON`
-
-Say hello
-
-```
-USAGE
-  $ velocilogic hello PERSON -f <value>
-
-ARGUMENTS
-  PERSON  Person to say hello to
-
-FLAGS
-  -f, --from=<value>  (required) Who is saying hello
-
-DESCRIPTION
-  Say hello
-
-EXAMPLES
-  $ velocilogic hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
-```
-
-_See code: [src/commands/hello/index.ts](https://github.com/VelociLogicCLI/velocilogic/blob/v0.0.0/src/commands/hello/index.ts)_
-
-## `velocilogic hello world`
-
-Say hello world
-
-```
-USAGE
-  $ velocilogic hello world
-
-DESCRIPTION
-  Say hello world
-
-EXAMPLES
-  $ velocilogic hello world
-  hello world! (./src/commands/hello/world.ts)
-```
-
-_See code: [src/commands/hello/world.ts](https://github.com/VelociLogicCLI/velocilogic/blob/v0.0.0/src/commands/hello/world.ts)_
+* [`velocilogic help [COMMAND]`](#velocilogic-help-command)
+* [`velocilogic plugins`](#velocilogic-plugins)
+* [`velocilogic plugins add PLUGIN`](#velocilogic-plugins-add-plugin)
+* [`velocilogic plugins:inspect PLUGIN...`](#velocilogic-pluginsinspect-plugin)
+* [`velocilogic plugins install PLUGIN`](#velocilogic-plugins-install-plugin)
+* [`velocilogic plugins link PATH`](#velocilogic-plugins-link-path)
+* [`velocilogic plugins remove [PLUGIN]`](#velocilogic-plugins-remove-plugin)
+* [`velocilogic plugins reset`](#velocilogic-plugins-reset)
+* [`velocilogic plugins uninstall [PLUGIN]`](#velocilogic-plugins-uninstall-plugin)
+* [`velocilogic plugins unlink [PLUGIN]`](#velocilogic-plugins-unlink-plugin)
+* [`velocilogic plugins update`](#velocilogic-plugins-update)
 
 ## `velocilogic help [COMMAND]`
 
@@ -399,5 +352,4 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v5.4.38/src/commands/plugins/update.ts)_
-
 <!-- commandsstop -->
